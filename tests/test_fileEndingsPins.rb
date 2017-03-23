@@ -7,7 +7,7 @@ class TestFileTypePins < Test::Unit::TestCase
       next if item == '.' or item == '..'
         file_exist = File.fnmatch?('Newpulldown_location-rohit.json', item.downcase)
         print item
-        assert_equal(false, file_exist)
+        assert_equal(true, file_exist)
       end
     end
   end
